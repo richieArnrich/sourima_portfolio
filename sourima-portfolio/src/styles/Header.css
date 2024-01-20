@@ -1,0 +1,105 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap");
+/* .active {
+  background-color: rgb(204, 119, 34);
+  color: white;
+  background: linear-gradient(to right, #5d4157, #a8caba);
+} */
+.navigation {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: black;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  position: sticky;
+  top: 0;
+  z-index: 3;
+}
+
+.navigation .brand {
+  font-size: 2rem;
+  margin: 1rem;
+  font-weight: bold;
+  text-decoration: none;
+  background: -webkit-linear-gradient(
+    rgb(245, 214, 183),
+    rgb(204, 119, 34),
+    rgb(118, 60, 1)
+  );
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.navigation .menu {
+  display: none;
+  position: absolute;
+  top: 0.75rem;
+  right: 0.5rem;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 2.25rem;
+  height: 2rem;
+}
+
+.navigation .menu span {
+  height: 0.4rem;
+  width: 100%;
+  background-color: black;
+  border-radius: 0.2rem;
+  transition: 3s ease-in-out;
+}
+.navigation ul {
+  display: flex;
+}
+.navigation ul li {
+  list-style-type: none;
+  padding: 5px;
+  margin: 5px;
+}
+
+.navigation ul li a {
+  text-decoration: none;
+  display: block;
+  color: white;
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+}
+
+.navigation ul li a:hover {
+  /* background-color: blue; */
+  /* color: white; */
+  color: rgba(250, 250, 43, 0.5);
+  background-color: rgba(8, 0, 0, 1);
+}
+
+@media (max-width: 480px) {
+  .navigation .menu {
+    display: flex;
+    transition: 0.5s ease-in;
+  }
+
+  .navigation {
+    flex-direction: column;
+    align-items: start;
+  }
+
+  .navigation ul {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    margin-bottom: 0.25rem;
+  }
+
+  .navigation ul.open {
+    display: flex;
+  }
+  .navigation ul li {
+    width: 100%;
+    text-align: center;
+  }
+
+  .navigation ul li a {
+    margin: 0.2rem 0.5rem;
+  }
+}
