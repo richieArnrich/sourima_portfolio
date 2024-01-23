@@ -14,28 +14,42 @@
   margin: 0;
 }
 .homeContent p {
+  font-size: 20px;
   width: 30rem;
-  padding: 15px;
+  padding: 5px;
   text-align: justify;
   color: white;
-  /* smargin-left: 8rem; */
+  /* margin: 0; */
+  /* margin-left: 15px; */
 }
 
 .homeContent img {
   display: block;
-  height: 20rem;
+  height: 25rem;
   margin-left: auto;
   margin-right: auto;
   padding: 10px;
-  opacity: 0.5;
+  opacity: 0.8;
   border-radius: 5rem;
 }
 
-/* .homeContent .imageContainer {
-  background: linear-gradient(rgb(248, 247, 247), rgb(155, 149, 149), black);
-  background-image: url("../images/Cover2.jpeg");
-  height: 100px;
-} */
+.homeContent .imageContainer {
+  /* background: radial-gradient(red, green, blue); */
+  /* background-image: url("../images/Sourima_cover2.jpg"); */
+  background: linear-gradient(
+      to bottom right,
+      rgba(183, 205, 247, 0.52),
+      rgba(29, 49, 59, 0.781),
+      rgba(7, 16, 24, 0.945)
+    ),
+    url("../images/Sourima_cover2-1.jpg");
+  height: 70vh;
+  z-index: 2;
+  background-size: contain;
+  background-position: left;
+  background-repeat: no-repeat;
+  border-radius: 3px;
+}
 #social {
   padding-left: 10px;
   margin-left: 5px;
@@ -48,4 +62,16 @@
 
 #socialIcon:hover {
   opacity: 0.5;
+}
+
+@media screen and (max-width: 600px) {
+  .homeContent {
+    flex-direction: column; /* Change to a column layout for smaller screens */
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+  .homeContent p {
+    text-align: center;
+  }
 }

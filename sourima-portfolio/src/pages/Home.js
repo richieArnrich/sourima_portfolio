@@ -1,6 +1,7 @@
 import React from "react";
-import cover from "../images/cover_pic.avif";
+import cover from "../images/Sourima_cover2.jpg";
 import "../styles/Home.css";
+import "../styles/scrollbar.css";
 import { Typography } from "@mui/material";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
@@ -18,11 +19,10 @@ function Home() {
             <h1>
               Hi, I'm<Typography variant="h1"> Sourima</Typography>
             </h1>
+            <p>"Words have the power to shape the world"</p>
             <p>
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-              Doloribus velit corrupti nam quaerat fuga voluptates esse corporis
-              non nemo magni. Assumenda laboriosam officiis rerum natus delectus
-              omnis, incidunt aspernatur molestiae.
+              Let me help you craft your message and make an impact through
+              content
             </p>
             <div id="social">
               <a href="https://www.facebook.com/">
@@ -32,14 +32,14 @@ function Home() {
                   style={{ color: "#FFD43B" }}
                 />
               </a>
-              <a href="https://www.youtube.com/">
+              <a href="https://www.instagram.com/">
                 <FontAwesomeIcon
                   icon={faInstagram}
                   id="socialIcon"
                   style={{ color: "#ffd43B" }}
                 />
               </a>
-              <a href="https://www.youtube.com/">
+              <a href="https://www.linkedin.com/">
                 <FontAwesomeIcon
                   icon={faLinkedin}
                   id="socialIcon"
@@ -49,7 +49,7 @@ function Home() {
             </div>
           </div>
           <div className="imageContainer">
-            <img src={cover} alt="pic here" />
+            <p></p>
           </div>
         </div>
       </div>

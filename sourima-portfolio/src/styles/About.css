@@ -1,0 +1,22 @@
+.grid-container {
+  background-color: rgb(211, 186, 116);
+  height: 80vh;
+}
+#grid-item {
+  height: 20rem;
+  margin-top: 40px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 5rem;
+}
+
+#para {
+  height: 60vh;
+  display: flex;
+  align-items: center;
+  text-align: justify;
+  font-weight: 600;
+  line-height: 30px;
+}
+
